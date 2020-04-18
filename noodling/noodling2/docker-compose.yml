@@ -19,14 +19,14 @@ services:
     # A container that exposes an API to show its IP address
     image: ghost
     labels:
-      - "traefik.http.routers.ghost.rule=Host(`ghost.docker.localhost`)"
+      - "traefik.http.routers.ghost.rule=Host(`ghost.letsbuilditinthecloud.com`)"
   nginx:
     # A container that exposes an API to show its IP address
     image: nginx
     labels:
-      - "traefik.http.routers.nginx.rule=Host(`nginx.docker.localhost`)"
+      - "traefik.http.routers.nginx.rule=Host(`nginx.letsbuilditinthecloud.com`)"
   jenkins:
     # A container that exposes an API to show its IP address
     image: jenkins
     labels:
-      - "traefik.http.routers.jenkins.rule=Host(`jenkins.docker.localhost`)"
+      - "traefik.http.routers.jenkins.rule=Host(`jenkins.letsbuilditinthecloud.com`)"
